@@ -1,0 +1,2 @@
+tkinter==8.6
+pillow==9.4.0  # Required for handling background images in Tkinter
