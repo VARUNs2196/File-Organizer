@@ -1,158 +1,126 @@
-# File-Organizer
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Organizer User Manual</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
+# File Organizer Application - User Manual
 
-        header {
-            background-color: #0044cc;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+Effortlessly organize your files into appropriate folders with the File Organizer application.
 
-        .container {
-            padding: 20px;
-        }
+---
 
-        h2 {
-            color: #0044cc;
-        }
+## Prerequisites & Requirements
 
-        .feature {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            margin-bottom: 10px;
-            padding: 10px;
-            border-radius: 5px;
-        }
+Before you begin, make sure you have the following installed:
 
-        .screenshot {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
+- *Python 3.x* or higher
+- *Libraries:*
+    - tkinter
+    - pillow
 
-        .requirements, .steps, .features {
-            margin-top: 20px;
-        }
+---
 
-        .requirements ul, .steps ul, .features ul {
-            list-style-type: none;
-            padding: 0;
-        }
+## Features
 
-        .requirements li, .steps li, .features li {
-            background-color: #ffffff;
-            margin: 5px 0;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
+The File Organizer offers the following key features:
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #0044cc;
-            color: white;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
+- *Automatic File Sorting*: Sorts files into categories like Videos, Audios, Documents, and more.
+- *Customizable Folder Creation*: Automatically creates folders for each file type in the specified directory.
+- *Supports Multiple File Formats*: Supports common file extensions for various media types such as videos, audios, and documents.
+- *Cross-Platform Support*: Compatible with both Windows and Linux operating systems.
 
-<header>
-    <h1>File Organizer Application - User Manual</h1>
-</header>
+---
 
-<div class="container">
-    <section class="requirements">
-        <h2>Prerequisites & Requirements</h2>
-        <p>Before using the File Organizer application, make sure you have the following installed:</p>
-        <ul>
-            <li>Python 3.x or higher</li>
-            <li>Libraries: 
-                <pre>tkinter, pillow</pre>
-            </li>
-        </ul>
-    </section>
+## Installation Steps
 
-    <section class="steps">
-        <h2>Installation Steps</h2>
-        <p>Follow these steps to get the File Organizer application running:</p>
-        <ol>
-            <li>Clone or download the project to your local machine.</li>
-            <li>Navigate to the project directory.</li>
-            <li>Create a virtual environment (optional but recommended):
-                <pre>python -m venv venv</pre>
-            </li>
-            <li>Activate the virtual environment:
-                <pre>venv\Scripts\activate (Windows)</pre>
-                <pre>source venv/bin/activate (Linux/macOS)</pre>
-            </li>
-            <li>Install required dependencies:
-                <pre>pip install -r requirements.txt</pre>
-            </li>
-            <li>Run the application:
-                <pre>python file_organizer.py</pre>
-            </li>
-        </ol>
-    </section>
+Follow these steps to get the File Organizer application running:
 
-    <section class="usage">
-        <h2>How to Use the File Organizer</h2>
-        <p>Follow these steps to organize your files:</p>
-        <ol>
-            <li>Open the application by running the Python script.</li>
-            <li>In the application window, enter the directory path where the files are located.</li>
-            <li>Select the file categories you want to organize (Videos, Audios, Documents, etc.).</li>
-            <li>Click the "Organize Files" button to move files into appropriate folders based on their type.</li>
-        </ol>
-    </section>
+1. *Step 1:* Clone or download the repository to your local machine.
 
-    <section class="features">
-        <h2>Features</h2>
-        <ul>
-            <li class="feature">
-                <strong>Automatic File Sorting</strong> – Sorts files based on types like Videos, Audios, Documents, etc.
-            </li>
-            <li class="feature">
-                <strong>Customizable Folder Creation</strong> – Automatically creates folders for each file type in the specified directory.
-            </li>
-            <li class="feature">
-                <strong>Supports Multiple File Formats</strong> – Supports common file extensions for videos, audios, and documents.
-            </li>
-            <li class="feature">
-                <strong>Cross-Platform Support</strong> – Works on both Windows and Linux operating systems.
-            </li>
-        </ul>
-    </section>
+    bash
+    git clone https://github.com/your-username/file-organizer.git
+    
 
-    <section class="screenshots">
-        <h2>Screenshots</h2>
-        <p>Here are some screenshots of the File Organizer in action:</p>
-        <img src="screenshot1.png" alt="File Organizer Screenshot 1" class="screenshot">
-        <img src="screenshot2.png" alt="File Organizer Screenshot 2" class="screenshot">
-    </section>
+2. *Step 2:* Navigate to the project directory.
+
+    bash
+    cd file-organizer
+    
+
+3. *Step 3:* (Optional but recommended) Create a virtual environment.
+
+    bash
+    python -m venv venv
+    
+
+4. *Step 4:* Activate the virtual environment:
+    - *Windows:*
+
+        bash
+        venv\Scripts\activate
+        
+
+    - *Linux/macOS:*
+
+        bash
+        source venv/bin/activate
+        
+
+5. *Step 5:* Install the required dependencies.
+
+    bash
+    pip install -r requirements.txt
+    
+
+6. *Step 6:* Run the application.
+
+    bash
+    python file_organizer.py
+    
+
+---
+
+## How to Use the File Organizer
+
+Once the application is set up, follow these steps to organize your files:
+
+1. *Step 1:* Open the application by running the Python script.
+2. *Step 2:* In the application window, enter the directory path where the files are located.
+3. *Step 3:* Select the file categories you want to organize (Videos, Audios, Documents, etc.).
+4. *Step 4:* Click the "Organize Files" button to move files into appropriate folders based on their type.
+
+---
+
+## Screenshots
+
+Here are some screenshots of the File Organizer in action:
+
+<div style="display: flex; justify-content: center; gap: 50px;">
+    <img src="pics/organiserpic1.png" alt="Stock Price Tracker in Action" width="500" height="400" />
+    <img src="pics/organiserpic2.png" alt="Stock Price Tracker in Action" width="700" height="400" />
 </div>
+---
 
-<footer>
-    <p>&copy; 2024 File Organizer Application</p>
-</footer>
+## Troubleshooting
 
-</body>
-</html>
+If you encounter any issues, here are some common solutions:
+
+- *Problem:* "ModuleNotFoundError" or missing libraries.
+  - *Solution:* Install missing dependencies using:
+
+    bash
+    pip install -r requirements.txt
+    
+
+- *Problem:* The application doesn’t recognize certain file formats.
+  - *Solution:* Check if the file extension is supported. The current version supports common video, audio, and document file types.
+
+---
+
+## Contact Support
+
+If you need additional help, feel free to contact us:
+
+- *Email:* [support@fileorganizerapp.com](mailto:support@fileorganizerapp.com)
+- *GitHub Repository:* [https://github.com/VARUNs2196/file-organizer](https://github.com/VARUNs2196/file-organizer)
+
+We are happy to assist you with any questions or issues you may have!
+
+---
+
+&copy; 2024 File Organizer Application | All Rights Reserved
